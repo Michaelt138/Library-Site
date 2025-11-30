@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer, aside, section {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  margin: 12px;
+  padding: 16px;
+}
+
+h1, h2, h3 { margin-top: 0; }
+
+
+#logo {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #dcdcdc;
+  margin: 12px;
+  grid-area: logo;
+} 
+
+ nav ul {
+  margin: 0;
+  padding-left: 24px; 
+}
+
+
+img {
+  border: 1px solid #e0e0e0;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table, th, td {
+  border: 1px solid #cfcfcf;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} 
+
+#hea {
+  grid-area: hea;
+}
+
+#navi {
+  grid-area: nav;
+}
+
+#about {
+  grid-area: about;
+}
+
+#catalog {
+  grid-area: cat;
+}
+
+#events {
+  grid-area: event;
+}
+
+#services {
+  grid-area: serv;
+}
+
+#gallery {
+  grid-area: gal;
+}
+
+#visit {
+  grid-area: visit;
+}
+
+#contact {
+  grid-area: con;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "hea hea hea"
+  "nav about about"
+  "nav about about"
+  "cat event event"
+  "cat serv serv"
+  "gal gal gal"
+  "visit visit con";
+
+  width: 100%;
+  height: 100%;
+}
